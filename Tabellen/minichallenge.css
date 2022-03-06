@@ -1,0 +1,48 @@
+body {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+caption {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 50%;
+    border-spacing: 0;
+    table-layout: auto;
+}
+
+tr {
+    height: 2rem;
+  }
+
+tr th {
+    background-color: silver;
+    padding: .2rem;
+    text-align: left;
+}
+
+td {
+    padding: .2rem;
+}
+
+tr:nth-child(odd) {
+    background-color:snow;
+}
+
+tr:nth-child(even) {
+    background-color: lavenderblush;
+}
+
+table tfoot {
+    table-layout: auto;
+}
+
+tfoot th {
+    background-color: white;
+    border-top: 1px solid silver;
+    font-weight: bold;
+}
+

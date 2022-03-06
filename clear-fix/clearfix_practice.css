@@ -1,0 +1,22 @@
+.container {
+    border: 3px solid black;
+    padding: 10px 20px;
+}
+
+img {
+    height: 300px;
+    width: auto;
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+
+}
+
+p {
+    padding: 10px 10px;
+    text-align:start;
+}

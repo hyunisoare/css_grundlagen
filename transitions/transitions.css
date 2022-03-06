@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    background-color: cornsilk;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#test {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    margin-top: 10%;
+    
+    margin-left: 50px;
+    margin-right: auto;
+
+    background: linear-gradient(lightsteelblue, midnightblue, lightsteelblue);
+    transition-property: width, height;
+    transition-duration: 0.5s;
+   
+}
+
+#test:hover {
+    width: 300px;
+    height: 300px;
+    animation: roll 2s;
+    transform: rotate(360deg);
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#test2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    margin-top: 10%;
+    
+    margin-left: 50px;
+    margin-right: auto;
+
+    background-color: orange;
+  
+    transition: width 2s ease-in-out 0.5s, height 2s ease-in-out 0.5s, background-color 3s;
+   
+}
+
+#test2:hover {
+    width: 300px;
+    height: 300px;
+    animation: roll 2s;
+    transform: rotate(360deg);
+    background-color:crimson;
+}

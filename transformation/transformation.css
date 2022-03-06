@@ -1,0 +1,78 @@
+body {
+    align-items: center;
+    justify-content: center;
+}
+
+
+#test {
+    background-color: cadetblue;
+    width: 400px;
+    padding: 2rem;
+    margin: 10rem;
+    transform: rotateZ(45deg);
+}
+
+@keyframes skew {
+    0% {
+        transform: skewX(20deg);
+    }
+    100% {
+        transform: skewX(-20deg);
+    }
+}
+
+.element {
+    display: inline-block;
+    background-color:coral;
+    height: 300px;
+    width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+    animation: skew 3s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+}
+
+@keyframes shake {
+    0% {
+        transform: skewY(20deg);
+    }
+    100% {
+        transform: skewY(-20deg);
+    }
+}
+
+.element2 {
+    display: inline-block;
+    background-color:cornflowerblue;
+    height: 300px;
+    width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+    animation: shake 2s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate (360deg);
+    }
+}
+
+.element3 {
+    display: inline-block;
+    background: linear-gradient(180deg, mistyrose, orangered, indigo);
+    opacity: .7;
+    height: 300px;
+    width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+    animation: roll 3s infinite;
+    transform: rotate(360deg);
+    animation-timing-function: ease-in-out;
+}

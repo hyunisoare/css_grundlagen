@@ -1,0 +1,17 @@
+body {
+    color: red;
+    border: 2px solid red;
+}
+
+h1 {
+    color: blue;
+}
+
+span {
+    color: inherit;
+    border: inherit;
+}
+b {
+    color: yellow;
+    border: inherit;
+}

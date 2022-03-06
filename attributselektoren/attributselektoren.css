@@ -1,0 +1,33 @@
+/* Ein Element mit einem bestimmten Attribut */
+
+[href]{
+    background-color: grey;
+}
+
+[id="dasIstEinAnker"]{
+    display: block;
+}
+
+[class~="einBild"]{
+    height: 100px;
+}
+
+[class|="test"]{
+    width: 300px;
+}
+
+[title^="Ich bin"]{
+    border: 10px solid red;
+} 
+
+[title$="Anker-Element"]{
+    color: white;
+}
+
+[id*="IstEin"]{
+    text-decoration: none;
+}
+
+[id*="anker" i]{
+    font-weight: bold;
+}

@@ -1,0 +1,20 @@
+.list1{
+    list-style-type: square;
+}
+
+.list2{
+    list-style-position: inside;
+}
+
+.list3 {
+    list-style-image: url(pfeil.png);
+}
+
+.list4 {
+    list-style: square inside url(pfeilo.png);
+}/* wenn das Image nicht erreichbar ist oder wenn man Image-Name vertippt,
+wird Square ein Vollback für Lists Image.*/
+
+.list5 > li {
+    display: inline-block;
+}

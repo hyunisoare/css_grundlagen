@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Forms Sturukturieren</title>
+    <style>
+
+        fieldset{
+            display: inline-block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="../forms/forms.html" method="POST">
+        <fieldset>
+            <legend>Personen-Daten:</legend>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Dein Name"><br><br>
+
+            <fieldset>
+                <legend>Geschlecht:</legend>
+                <label for="geschlecht">Männlich</label>
+                <input type="radio" name="geschlecht" value=m>
+                <label for="geschlecht">Weiblich</label>
+                <input type="radio" name="geschlecht" value=w><br><br>
+    
+                
+            </fieldset>
+           
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Login-Daten:</legend>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" placeholder="Deine E-Mail Adresse"><br><br>
+            <label for="password">Passwort:</label>
+            <input type="password" name="password" placeholder="Dein Passwort"><br><br>
+
+        </fieldset>
+        <br><br>
+        <button type="submit">Abschicken!</button>
+
+    </form>
+</body>
+
+</html>

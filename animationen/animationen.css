@@ -1,0 +1,45 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: silver;
+}
+
+@keyframes komplexereAnimation {
+
+    0% {  background-color: red; 
+        top: 0; 
+        left: 0; 
+        width: 200px; 
+        height: 200px; 
+    }
+    25% { background-color: orange;
+         top: 0; 
+         left: 400px; 
+         width: 100px; 
+         height: 100px; 
+        }
+    50% { background-color: yellow;
+         top: 400px; 
+         left: 400px; 
+         width: 200px; 
+         height: 200px; 
+        }
+    75% { background-color: green; 
+        top: 400px; 
+        left: 0; 
+        width: 300px; 
+        height: 300px; 
+    }
+    100% { background-color: lightblue;
+         top: 0; 
+         left: 0; 
+         width: 200px; 
+         height: 200px; 
+        }
+
+}
+/* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
+#test {
+    position: relative;
+    animation: komplexereAnimation 5s ease-in-out 0.5s infinite alternate-reverse both running;
+}
